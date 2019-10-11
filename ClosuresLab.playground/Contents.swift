@@ -27,7 +27,7 @@ import UIKit
 //let numbers = [1, 2, 3, 4, 6, 8, 9, 3, 12, 11]
 //let expectedOutputTwo = [3, 6, 9, 3, 12]
 //let outputTwo = multiples(of: 3, in: numbers)
-//assert(outputTwo == expectedOutput, "Expected output to be \(expectedOutputTwo), but found \(outputTwo)")
+//assert(outputTwo == expectedOutputTwo, "Expected output to be \(expectedOutputTwo), but found \(outputTwo)")
 
 
 // Question Three
