@@ -6,14 +6,21 @@ import UIKit
 
 
 // Your function here
+func applyKTimes (_ k: Int, closure: ()->()) {
+    if k >= 1{
+        for _ in 0..<k{
+            closure()
+        }
+        }
+}
 
 // Uncomment out the following lines to check your solution
 
-//var myVal = 0
-//applyKTimes(5) {
-//    myVal += 1
-//}
-//assert(myVal == 5, "Expected myVal to be five, but was \(myVal)")
+var myVal = 0
+applyKTimes(5) {
+    myVal += 1
+}
+assert(myVal == 5, "Expected myVal to be five, but was \(myVal)")
 
 
 // Question Two
@@ -21,6 +28,14 @@ import UIKit
 // Write a function called multiples(of:in) that takes in an array of Ints and returns all of the Ints that are a multiple of a given number n.  Use filter in your function.
 
 // Your function here
+
+func multiples(firstValue: Int, inarray: Int) -> Int{
+    
+    let answer = arrayOfInt.filter {
+        
+    
+}
+
 
 // Uncomment out the following lines to check your solution
 
@@ -35,6 +50,19 @@ import UIKit
 // Write a function called largestValue(in:) that finds the largest Int in an array of Ints. Use reduce to solve this exercise.
 
 // Your function here
+func largestValue(in numbers: [Int]) -> Int {
+   var results = 0
+    
+    guard let first = numbers.first else { return -1 }
+    results = numbers.reduce(first) { prevResult , currentValue in
+        if prevResult > currentValue {
+    return prevResult
+    } else {
+    return currentValue
+    }
+    }
+    return results
+}
 
 // Uncomment out the following lines to check your solution
 
